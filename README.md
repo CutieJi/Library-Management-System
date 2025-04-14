@@ -1,8 +1,6 @@
 <h1 align="center">Codeigniter 3.1.13 - E-Library Management System (icp-shelfhub)</h1>
 <p align="center">An open source Library Management System application with framework CodeIgniter version 3.1.13</p>
 
-<img src="./docs/img/thumbnail/E-PERPUS-SOLO.png" alt="E-PERPUS-SOLO">
-
 # Table of Contents
 
 - [Tech Stack](#tech-stack)
@@ -105,38 +103,6 @@ cp .env.example .env.development
 > APP_NAME=ICP-SHELFHUB
 > ```
 
-### Setup Database
-
-#### GUI
-
-- Create a new Database with GUI
-
-  ![Create New Database](./docs/img/setup-database/create_database_gui.png)
-
-- Import `icp-shelfhub/database/db_icp_shelfhub.sql` to the database using phpmyadmin or GUI
-
-  ![Import Database](./docs/img/setup-database/import_database_gui.png)
-
-#### CLI
-3
-- Create a new Database with CLI
-
-```sql
-CREATE DATABASE db_icp_shelfhub;
-```
-
-- Import schema to database using CLI
-
-```shell
-mysql -u root -p db_icp_shelfhub < database/db_icp_shelfhub.sql
-```
-
-or if you use powershell terminal, you can run this command:
-
-```pwsh
-Get-Content 'database\db_icp_shelfhub.sql' | mysql -u root -p db_icp_shelfhub
-```
-
 ## List Default Account Login
 
 | Email                | Username      | Password      | Role          |
@@ -144,9 +110,3 @@ Get-Content 'database\db_icp_shelfhub.sql' | mysql -u root -p db_icp_shelfhub
 | default@admin.com    | administrator | aysipiadmin   | Administrator |
 | default@operator.com | operator      | 123qweasdzxc  | Operator      |
 | default@user.com     | user          | aysipi2025    | User          |
-
-## ERD (Entity Relationship Diagram)
-
-You can view this ERD on this link [whimsical.com/erd-sbd-e-perpus-solo-SmsYrg1YNrizCCrQvuZjQf](https://whimsical.com/erd-sbd-e-perpus-solo-SmsYrg1YNrizCCrQvuZjQf)
-
-![ICP-SHELFHUB ERD](./docs/img/erd/E-PERPUS-SOLO-ERD.png)
