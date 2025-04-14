@@ -39,7 +39,7 @@ This boilerplate build with some tech stack, such as:
 
 > **NOTE**:
 >
-> - For PHP, MySQL and Apache you can install with bundle software like `XAMPP`, `MAMP`, `LAMP` or `Laragon`
+> - For PHP, MySQL and Apache you can install with bundle software like `XAMPP`, `MAMP`, `UniZ`, `LAMP` or `Laragon`
 >
 > - `Git` for cloning or downloading this repository
 
@@ -54,7 +54,7 @@ This boilerplate build with some tech stack, such as:
 
 > **NOTE**:
 >
-> Save this clone on PATH where webserver can load such as `xampp/htdocs`, `/var/www`, `/srv/http` or `laragon/www`
+> Save this clone on PATH where webserver can load such as `xampp/htdocs`, `/var/www`, `UniserverZ/www`, `/srv/http` or `laragon/www`
 
 - Clone this repository using SSH
 
@@ -80,7 +80,7 @@ cp .env.example .env.development
 
 > **NOTE**:
 >
-> Change the `.env.development` fields with your configuration (such as database name, etc)
+> Change the `.env.development` fields with your configuration (such as database name, etc). This file also work on UniserverZ
 >
 > Default configuration is:
 
