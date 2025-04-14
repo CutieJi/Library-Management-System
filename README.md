@@ -61,19 +61,19 @@ This boilerplate build with some tech stack, such as:
 - Clone this repository using SSH
 
 ```shell
-git clone git@github.com:cutieji/library-management-system.git
+git clone git@github.com:CutieJi/Library-Management-System.git
 ```
 
 - Clone this repository using HTTPS
 
 ```shell
-git clone https://github.com/armandwipangestu/e-perpus-solo.git
+git clone https://github.com/CutieJi/Library-Management-System.git
 ```
 
 ### Create file `.env.development`
 
 ```sh
-cd e-perpus-solo
+cd icp-shelfhub
 ```
 
 ```sh
@@ -85,23 +85,24 @@ cp .env.example .env.development
 > Change the `.env.development` fields with your configuration (such as database name, etc)
 >
 > Default configuration is:
->
+
 > ```
 > # Database Connection
+> DB_PORT=3307
 > DB_HOSTNAME=localhost
 > DB_USERNAME=root
-> DB_PASSWORD=
-> DB_NAME=e_perpus_solo
+> DB_PASSWORD=root
+> DB_NAME=db_icp_shelfhub
 > DB_CONNECTION=mysqli
 >
 > # BASE PATH
 > # use localhost
-> BASE_URL=/e-perpus-solo
-> # use pretty url from laragon, like `e-perpus-solo.test`
+> BASE_URL=https://localhost:81/icp-shelfhub/
+> # use pretty url from laragon, like `icp-shelfhub.test`
 > # BASE_URL=
 >
 > # APP NAME
-> APP_NAME=E-PERPUS-SOLO
+> APP_NAME=ICP-SHELFHUB
 > ```
 
 ### Setup Database
@@ -112,40 +113,40 @@ cp .env.example .env.development
 
   ![Create New Database](./docs/img/setup-database/create_database_gui.png)
 
-- Import `e-perpus-solo/database/e_perpus_solo.sql` to the database using phpmyadmin or GUI
+- Import `icp-shelfhub/database/db_icp_shelfhub.sql` to the database using phpmyadmin or GUI
 
   ![Import Database](./docs/img/setup-database/import_database_gui.png)
 
 #### CLI
-
+3
 - Create a new Database with CLI
 
 ```sql
-CREATE DATABASE e_perpus_solo;
+CREATE DATABASE db_icp_shelfhub;
 ```
 
 - Import schema to database using CLI
 
 ```shell
-mysql -u root -p e_perpus_solo < database/e_perpus_solo.sql
+mysql -u root -p db_icp_shelfhub < database/db_icp_shelfhub.sql
 ```
 
 or if you use powershell terminal, you can run this command:
 
 ```pwsh
-Get-Content 'database\e_perpus_solo.sql' | mysql -u root -p e_perpus_solo
+Get-Content 'database\db_icp_shelfhub.sql' | mysql -u root -p db_icp_shelfhub
 ```
 
 ## List Default Account Login
 
 | Email                | Username      | Password      | Role          |
 | -------------------- | ------------- | ------------- | ------------- |
-| default@admin.com    | administrator | 123qweasdzxc  | Administrator |
+| default@admin.com    | administrator | aysipiadmin   | Administrator |
 | default@operator.com | operator      | 123qweasdzxc  | Operator      |
-| default@user.com     | user          | 123qweasdzxcz | User          |
+| default@user.com     | user          | aysipi2025    | User          |
 
 ## ERD (Entity Relationship Diagram)
 
 You can view this ERD on this link [whimsical.com/erd-sbd-e-perpus-solo-SmsYrg1YNrizCCrQvuZjQf](https://whimsical.com/erd-sbd-e-perpus-solo-SmsYrg1YNrizCCrQvuZjQf)
 
-![E-PERPUS-SOLO ERD](./docs/img/erd/E-PERPUS-SOLO-ERD.png)
+![ICP-SHELFHUB ERD](./docs/img/erd/E-PERPUS-SOLO-ERD.png)
