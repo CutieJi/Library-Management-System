@@ -1,4 +1,4 @@
-<h1 align="center">Codeigniter 3.1.13 - E-PERPUS-SOLO</h1>
+<h1 align="center">Codeigniter 3.1.13 - E-Library Management System (icp-shelfhub)</h1>
 <p align="center">An open source Library Management System application with framework CodeIgniter version 3.1.13</p>
 
 <img src="./docs/img/thumbnail/E-PERPUS-SOLO.png" alt="E-PERPUS-SOLO">
@@ -61,7 +61,7 @@ This boilerplate build with some tech stack, such as:
 - Clone this repository using SSH
 
 ```shell
-git clone git@github.com:armandwipangestu/e-perpus-solo.git
+git clone git@github.com:cutieji/library-management-system.git
 ```
 
 - Clone this repository using HTTPS
