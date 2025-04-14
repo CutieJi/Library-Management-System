@@ -1,0 +1,51 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+
+composer.lock
+tests/mocks/database/ci_test.sqlite
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+# .env configuration
+.env.development
+.env
+
+# Ignore all files in the img/avatar_image directory
+assets/img/avatar_image/*
+
+# Include specific image files
+!assets/img/avatar_image/default_female.jpg
+!assets/img/avatar_image/default_male.jpg
+!assets/img/avatar_image/default_female_old.png
+!assets/img/avatar_image/default_male_old.png
+
+# Ignore all files in the img/cover_image directory
+assets/img/cover_image/*
+
+# Include specific image files
+!assets/img/cover_image/default_cover.jpg

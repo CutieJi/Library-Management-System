@@ -1,0 +1,78 @@
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.main-footer {
+	padding: 0px 30px 0px 30px;
+}
+
+@media (min-width: 1199px) {
+	.main-footer {
+		padding: 20px 0px 20px 0px;
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.hover-scale {
+	transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+	transform: scale(1.1);
+}
+
+.cover-image {
+	width: 200px !important;
+	height: 300px !important;
+}
+
+.cover-image2 {
+	width: 100px !important;
+	height: 150px !important;
+}
+
+#carouselTrendingBooks {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.carousel-control {
+	width: 30px !important;
+	height: 50px !important;
+}
+
+.carousel-control.left {
+	margin-left: -45px;
+	color: #898989 !important;
+}
+
+.carousel-control.right {
+	margin-right: -45px;
+	color: #898989 !important;
+}
+
+.carousel-control-next {
+	width: 30px !important;
+	height: 50px !important;
+	margin: auto 0;
+	right: 25px !important;
+}
+
+.carousel-control-prev {
+	width: 30px !important;
+	height: 50px !important;
+	margin: auto 0;
+	left: 25px !important;
+}
