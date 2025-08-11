@@ -80,22 +80,21 @@ cp .env.example .env.development
 
 > **NOTE**:
 >
-> Change the `.env.development` fields with your configuration (such as database name, etc). This file also work on UniserverZ
+> Change the `.env.development` fields with your configuration (such as database name, etc). This file also work on XAMPP
 >
 > Default configuration is:
 
 > ```
 > # Database Connection
-> DB_PORT=3307
 > DB_HOSTNAME=localhost
 > DB_USERNAME=root
-> DB_PASSWORD=root
+> DB_PASSWORD=
 > DB_NAME=db_icp_shelfhub
 > DB_CONNECTION=mysqli
 >
 > # BASE PATH
 > # use localhost
-> BASE_URL=https://localhost:81/icp-shelfhub/
+> BASE_URL=https:http://localhost/icp-shelfhub/
 > # use pretty url from laragon, like `icp-shelfhub.test`
 > # BASE_URL=
 >
